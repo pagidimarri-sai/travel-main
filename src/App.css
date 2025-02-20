@@ -46,10 +46,10 @@
 
 /* Center - Navigation Links */
 .nav-links {
-  display: flex;
-  gap: 20px;
+    display: flex;
+    gap: 60px; /* Adjust spacing as needed */
+    align-items: center; /* Ensures proper vertical alignment */
 }
-
 .nav-links a {
   color: white;
   text-decoration: none;
@@ -60,6 +60,7 @@
 .nav-links a:hover {
   color: #ffcc00;
 }
+
 
 /* Right - Search Box & Profile */
 .right-section {
@@ -99,12 +100,15 @@
 
 /* Bottom-Left Buttons */
 .button-container {
-  position: fixed; /* Ensures it remains at the bottom left */
+  position: fixed; /* Keeps it fixed at the bottom left */
   bottom: 20px;
-  left: 20px;
-  z-index: 101; /* Higher than the video */
+  left: 44px;
+  z-index: 101; /* Ensures it's above the video */
+  display: flex; /* Aligns buttons in a row */
+  gap: 20px; /* Space between buttons */
 }
 
+/* Buttons */
 .button-container button {
   background: transparent;
   border: none;
@@ -112,8 +116,35 @@
   font-size: 18px;
   cursor: pointer;
   transition: color 0.3s;
+  padding: 10px 15px; /* Adds padding to avoid buttons collapsing */
 }
 
 .button-container button:hover {
   color: #ffcc00;
+}
+/* Bottom-Right Arrows */
+/* Bottom-Right Arrows */
+/* Bottom-Right Arrows */
+.arrow-container {
+  position: fixed;
+  bottom: 15px; /* Adjusted downward */
+  right: 40px; /* Adjusted spacing */
+  display: flex;
+  gap: 30px;
+  z-index: 102; /* Above other content */
+}
+
+.arrow-container button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 55px; /* Increased size */
+  padding: 15px; /* Better clickable area */
+  cursor: pointer;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.arrow-container button:hover {
+  color: #ffcc00;
+  transform: scale(1.4); /* More prominent on hover */
 }

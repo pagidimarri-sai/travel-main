@@ -3,14 +3,22 @@ import "./App.css";
 import { Search } from "lucide-react"; // Ensure Lucide React is installed
 
 const App = () => {
+  const handleLeftClick = () => {
+    console.log("Left arrow clicked");
+    // Add your functionality here (e.g., slide left, previous content, etc.)
+  };
+
+  const handleRightClick = () => {
+    console.log("Right arrow clicked");
+    // Add your functionality here (e.g., slide right, next content, etc.)
+  };
+
   return (
     <div className="video-container">
       {/* Top Bar */}
       <nav className="topbar">
         {/* Left - Logo */}
-        <div className="logo">
-          🌍 <span>TravelMate</span>
-        </div>
+        <div className="logo">🌍 <span>TravelMate</span></div>
 
         {/* Center - Navigation Links */}
         <div className="nav-links">
@@ -35,7 +43,7 @@ const App = () => {
         Your browser does not support the video tag.
       </video>
 
-      {/* Transparent Buttons */}
+      {/* Transparent Buttons - Bottom Left */}
       <div className="button-container">
         <button>India 360</button> |  
         <button>Adventure</button> |  
@@ -43,6 +51,12 @@ const App = () => {
         <button>Wildlife</button> |  
         <button>Heritage</button> |  
         <button>Spiritual</button>
+      </div>
+
+      {/* Bottom Right Arrows */}
+      <div className="arrow-container">
+        <button onClick={handleLeftClick}>←</button>
+        <button onClick={handleRightClick}>→</button>
       </div>
     </div>
   );
