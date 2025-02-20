@@ -1,5 +1,4 @@
-@import "tailwindcss";
-/* Full-screen video */
+/* Background Video */
 .video-container {
   position: relative;
   width: 100vw;
@@ -8,35 +7,107 @@
 }
 
 .background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-/* Button styles */
+/* Topbar */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+}
+
+/* Left - Logo */
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+/* Center - Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+/* Right - Search Box & Profile */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.search-icon {
+  color: gray;
+  margin-right: 5px;
+}
+
+/* Profile Icon */
+.profile-icon {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Transparent Buttons */
 .button-container {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  display: flex;
-  gap: 10px;
   font-size: 18px;
 }
 
 .button-container button {
-  background: rgba(255, 255, 255, 0.2);
+  background: transparent;
   border: none;
   color: white;
-  padding: 10px 15px;
+  font-size: 18px;
   cursor: pointer;
-  font-weight: bold;
-  backdrop-filter: blur(5px);
-  border-radius: 5px;
+  transition: color 0.3s;
 }
 
 .button-container button:hover {
-  background: rgba(255, 255, 255, 0.4);
+  color: #ffcc00;
 }
