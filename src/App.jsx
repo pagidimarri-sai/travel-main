@@ -39,7 +39,7 @@ const App = () => {
 
       {/* Background Video */}
       <video autoPlay loop muted className="background-video">
-        <source src="/Alaska in 8K 60p HDR  (Dolby Vision) - Jacob + Katie Schwarz (720p, h264).mp4" type="video/mp4" />
+        <source src="/Top 10 Spiritual Destinations In India - Bridge (720p, h264).mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
